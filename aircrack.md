@@ -12,7 +12,7 @@ Herramienta para auditar redes
 sudo apt install aircrack-ng
 
 aircrack.ng 
-(Obtener un diccionario de claves rockyou.txt es de buena calidad)[https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt&ved=2ahUKEwiRsJD3-riKAxWhp5UCHVbWOOMQFnoECAoQAQ&usg=AOvVaw3snAERl1mU6Ccr4WFEazBd]
+[Obtener un diccionario de claves rockyou.txt es de buena calidad](https://www.google.com/url?sa=t&source=web&rct=j&opi=89978449&url=https://github.com/brannondorsey/naive-hashcat/releases/download/data/rockyou.txt&ved=2ahUKEwiRsJD3-riKAxWhp5UCHVbWOOMQFnoECAoQAQ&usg=AOvVaw3snAERl1mU6Ccr4WFEazBd)
 
 Poder conocer valores de red
 ifconfig

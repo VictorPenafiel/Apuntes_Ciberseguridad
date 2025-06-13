@@ -1,29 +1,31 @@
-(ANSI)Agencia Nacional de Ciberseguridad [https://anci.gob.cl/]
-(LEY MARCO DE CIBERSEGURIDAD)[https://www.bcn.cl/leychile/navegar?i=1202434]
+ANSI[Agencia Nacional de Ciberseguridad](https://anci.gob.cl/)
+[LEY MARCO DE CIBERSEGURIDAD](https://www.bcn.cl/leychile/navegar?i=1202434)
 
-Pasos a seguir:
+Pasos a seguir: Para evitar los riesgos, los riesgos nunca son tecnicos sino en los efectos que tengan en el negocio.
 
-# 1.- Negocio
+
+# 1.- Analisis del contexto
 1. Comprensión de la organización y su contexto
 2. Comprensión de las necesidades y expectativas de las partes interesadas
 3. Determinación del alcance del sistema de gestión de seguridad de la
 información
 
-# 2.- Realizar analisis PESTEL:
+## .- Realizar analisis PESTEL:Externo
 
-(Plantilla)[https://docs.google.com/spreadsheets/d/1wbjdMiT01HiMG0Up47tnDLJXIQ7a5cYw/edit?usp=drive_link&ouid=100394237609231679508&rtpof=true&sd=true]
+[Plantilla](https://docs.google.com/spreadsheets/d/1wbjdMiT01HiMG0Up47tnDLJXIQ7a5cYw/edit?usp=drive_link&ouid=100394237609231679508&rtpof=true&sd=true)
 factores políticos, económicos, socioculturales, tecnológicos, legales y ambientales.
 
  Herramienta de planificación estratégica que permite a las empresas y organizaciones analizar y comprender los factores macroambientales externos que pueden afectar su funcionamiento y sus resultados. Es una forma sistemática de identificar las oportunidades y amenazas que presenta el entorno, lo que a su vez ayuda a tomar decisiones informadas.
 
-# 3.- Realizar FODA:
+## .- Realizar FODA:Interno
 
-Realizar maztriz de riesgos: 
+# 2.- Realizar maztriz de riesgos: 
 Herramienta visual que se utiliza para identificar, evaluar y clasificar los riesgos a los que se enfrenta una organización, proyecto o proceso. 
+[NIST](https://nvlpubs.nist.gov/nistpubs/Legacy/SP/nistspecialpublication800-60v1r1.pdf)
 
-# 4.- Auditoria (Control)
+# 3.- Auditoria (Control)
 
-
+Los riesgos nunca son tecnicos sino son los efectos que tienen en el negocio.
 ---
 
 ## 5. Controles Organizacionales 
@@ -174,3 +176,5 @@ Herramienta visual que se utiliza para identificar, evaluar y clasificar los rie
 * **8.34 Protección de los sistemas de información durante las pruebas de auditoría** Control: Las pruebas de auditoría y otras actividades de aseguramiento en la evaluación de los sistemas en producción deben ser cuidadosamente planificadas y acordadas entre el evaluador y los gestores adecuados.
 
 ---
+
+# 4.- Clausula Mejora
