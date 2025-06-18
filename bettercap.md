@@ -1,0 +1,23 @@
+
+*   **`apt install bettercap`**: Este comando es fundamental al inicio, ya que Bettercap **no viene instalado por defecto en Kali Linux**. Es el primer paso para poder utilizar la herramienta en tu sistema.
+*   **`bettercap`**: Una vez instalado, al ejecutar este comando sin más (como usuario `root` o con `sudo`), Bettercap comienza a **detectar los dispositivos conectados dentro de tu red privada**. Se describe como una forma "más fácil y visual" que Nmap para la detección de IPs.
+*   **`ticker on`**: Este comando se utiliza dentro de la interfaz de Bettercap para **visualizar la información de la red de una forma "mucho más visual" y organizada**. Es crucial para identificar fácilmente la puerta de enlace (Gateway).
+*   **`set arp.spoof.targets 192.168.0.1`** (ejemplo con la IP del router): Este comando es para **establecer el objetivo del ataque ARP Spoofing**. En el ejemplo, se usa la IP de la puerta de enlace (el router) para que la máquina Kali se ponga "justo enfrente" de ella y pueda ver todo el tráfico de la red.
+*   **`arp.spoof on`**: Una vez que se ha establecido el objetivo, este comando es para **activar el ataque ARP Spoofing**. Después de ejecutarlo, la herramienta ya está "en medio del router" y "preparado para ver todo el tráfico".
+*   **`set net.sniff.verbos on`**: Este comando se utiliza antes de activar el sniffer para configurar la salida a un modo más detallado (verboso).
+*   **`net.sniff on`**: Este comando **activa el "sniffing"** o la escucha del tráfico en la red, permitiendo a Bettercap interceptar las comunicaciones. Es similar a lo que haría Wireshark.
+*   **`control c`**: Se utiliza para **salir de la sesión actual de Bettercap**. Esto es necesario si quieres iniciar una nueva configuración o ataque desde cero, como al cambiar de un ataque ARP Spoofing al router a uno directo contra la máquina víctima.
+*   **`clear`**: Este comando es para **limpiar el terminal** de Kali Linux, borrando la salida anterior y dejando la pantalla limpia.
+*   **`set arp.spoof.targets 192.168.0.3`** (ejemplo con la IP de la máquina Windows): Similar al comando anterior, pero en este caso, el objetivo del ARP Spoofing se establece **directamente contra la IP de la máquina víctima** (en el ejemplo, la máquina Windows con IP .3).
+*   **`arp -a`**: Este comando se ejecuta en la máquina víctima (en este caso, la máquina Windows) y permite **ver la tabla ARP**. Se usa para verificar que el ataque ARP Spoofing ha sido exitoso, al mostrar que la IP del router tiene ahora la dirección MAC de la máquina Kali Linux.
+*   **`set dns.spoof.domains ubuntu.com`** (ejemplo de dominio): Este comando configura Bettercap para **especificar qué dominios web serán interceptados** en el ataque de DNS Spoofing. En el ejemplo, se usa `ubuntu.com` para redirigir su tráfico.
+*   **`sudo apt install apache2`**: Este comando se utiliza para **instalar el servidor web Apache2** en Kali Linux. Es necesario para montar un servidor web local que será el destino de la redirección en el ataque DNS Spoofing.
+*   **`cd /var/www/html`**: Este comando de navegación se usa para **acceder al directorio por defecto donde Apache2 aloja los archivos HTML** de las páginas web.
+*   **`sudo rm index.html`**: Para la demostración del DNS Spoofing, se usa este comando para **eliminar el archivo `index.html` por defecto** que viene con Apache2.
+*   **`nano index.html`**: Este comando **abre el editor de texto Nano** para crear un nuevo archivo `index.html` en el directorio de Apache. Aquí se crea el mensaje "Ha sido víctima de un DNS spoofing".
+*   **`systemctl start apache2`**: Este comando **inicia el servicio del servidor web Apache2** en Kali Linux. Es crucial para que el servidor esté activo y pueda recibir el tráfico redirigido.
+*   **`systemctl status apache2`**: Permite **verificar el estado del servicio Apache2**, confirmando que está activo y funcionando correctamente.
+*   **`set dns.spoof.address 192.168.0.9`** (ejemplo con la IP de la máquina Kali): Este comando configura Bettercap para **especificar la dirección IP a la que se redirigirá el tráfico** del dominio spoofed. En el ejemplo, es la IP de la máquina Kali Linux donde se ha montado el servidor Apache2.
+*   **`dns.spoof on`**: Finalmente, este comando **activa el ataque de DNS Spoofing**, poniendo en marcha la redirección del tráfico para los dominios configurados.
+
+Estos comandos, en su secuencia y propósito, son los pilares para realizar los ataques MITM (ARP Spoofing y DNS Spoofing) demostrados en las fuentes.
