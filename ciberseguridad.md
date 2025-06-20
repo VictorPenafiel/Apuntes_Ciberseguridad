@@ -1,6 +1,18 @@
 ANSI[Agencia Nacional de Ciberseguridad](https://anci.gob.cl/)
 [LEY MARCO DE CIBERSEGURIDAD](https://www.bcn.cl/leychile/navegar?i=1202434)
 
+La ciberseguridad se puede definir como la protección de los activos de información, abordando las 
+amenazas a la información procesada, almacenada y transportada por sistemas de información interconectados.
+
+Es una debilidad o fallo en un sistema de información que pone en riesgo la seguridad de la información pudiendo permitir que un atacante pueda comprometer la integridad, disponibilidad o confidencialidad de la misma, por lo que es necesario encontrarlas y eliminarlas lo antes posible. ” (INCIBE, 2019)
+
+Seguridad de la Información :“La preservación de la confidencialidad, integridad y disponibilidad de la información”.
+(ISO 27000:2019)ID
+Información:
+Confidencialidad
+Integridad
+Disponibilidad
+
 Pasos a seguir: Para evitar los riesgos, los riesgos nunca son tecnicos sino en los efectos que tengan en el negocio.
 
 
