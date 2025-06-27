@@ -1,3 +1,23 @@
+curl: Se utiliza para transmitir datos con sintaxis URL
+
+curl --manual
+
+curl poner_IP
+    Entrega de informacion, a traves, de un Json
+
+Instalar libreria para ver Json
+    sudo apt-get install jq
+
+curl http://3.86.214.94:30008/ | jq .
+
+-X_Permite especificar el metodo HTTP
+curl -X GET  http://3.86.214.94:30008/user/13
+curl -X GET  http://3.86.214.94:30008/admin/settings
+curl -X POST  http://3.86.214.94:30008/login -d "username=user1&password=password1"
+curl -X GET  http://3.86.214.94:30008/admin/users | jq
+curl -X GET "http://3.86.214.94:30008/system/info" | jq .   
+
+
 Fases: Se adecuan respectos al contexto
 Caja gris
 Caja negra
