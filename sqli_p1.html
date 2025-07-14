@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SQL Injection: OR 1=1 Attack Demo</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 20px;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            color: #333;
+        }
+        
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            background: white;
+            border-radius: 20px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            overflow: hidden;
+        }
+        
+        .header {
+            background: linear-gradient(45deg, #ff6b6b, #ee5a24);
+            color: white;
+            padding: 30px;
+            text-align: center;
+        }
+        
+        .demo-section {
+            padding: 30px;
+            border-bottom: 1px solid #eee;
+        }
+        
+        .scenario {
+            display: flex;
+            gap: 30px;
+            margin-bottom: 30px;
+        }
+        
+        .normal-scenario, .attack-scenario {
+            flex: 1;
+            padding: 20px;
+            border-radius: 15px;
+            border: 2px solid;
+        }
+        
+        .normal-scenario {
+            background: #f8fff8;
+            border-color: #27ae60;
+        }
+        
+        .attack-scenario {
+            background: #fff8f8;
+            border-color: #e74c3c;
+        }
+        
+        .query-box {
+            background: #2c3e50;
+            color: #ecf0f1;
+            padding: 15px;
+            border-radius: 8px;
+            font-family: 'Courier New', monospace;
+            margin: 10px 0;
+            border-left: 4px solid #3498db;
+        }
+        
+        .danger {
+            color: #e74c3c;
+            font-weight: bold;
+        }
+        
+        .safe {
+            color: #27ae60;
+            font-weight: bold;
+        }
+        
+        .highlight {
+            background: #fff3cd;
+            padding: 15px;
+            border-radius: 8px;
+            border-left: 4px solid #ffc107;
+            margin: 15px 0;
+        }
+        
+        .step {
+            background: #f8f9fa;
+            padding: 20px;
+            margin: 15px 0;
+            border-radius: 10px;
+            border-left: 4px solid #6c757d;
+        }
+        
+        .interactive-demo {
+            background: #f0f8ff;
+            padding: 25px;
+            border-radius: 15px;
+            margin: 20px 0;
+        }
+        
+        .input-group {
+            margin: 15px 0;
+        }
+        
+        .input-group label {
+            display: block;
+            margin-bottom: 5px;
+            font-weight: bold;
+        }
+        
+        .input-group input {
+            width: 100%;
+            padding: 10px;
+            border: 2px solid #ddd;
+            border-radius: 5px;
+            font-size: 14px;
+        }
+        
+        .btn {
+            background: linear-gradient(45deg, #667eea, #764ba2);
+            color: white;
+            border: none;
+            padding: 12px 25px;
+            border-radius: 25px;
+            cursor: pointer;
+            font-size: 16px;
+            margin: 10px 5px;
+            transition: transform 0.2s;
+        }
+        
+        .btn:hover {
+            transform: translateY(-2px);
+        }
+        
+        .result-box {
+            padding: 15px;
+            margin: 15px 0;
+            border-radius: 8px;
+            font-family: monospace;
+        }
+        
+        .result-safe {
+            background: #d4edda;
+            border: 1px solid #c3e6cb;
+            color: #155724;
+        }
+        
+        .result-danger {
+            background: #f8d7da;
+            border: 1px solid #f5c6cb;
+            color: #721c24;
+        }
+        
+        .explanation {
+            background: #e9ecef;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 15px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <h1>🚨 SQL Injection: ¿Por qué "OR 1=1" es un Ataque?</h1>
+            <p>Demostración Interactiva para Entender la Vulnerabilidad</p>
+        </div>
+
+        <div class="demo-section">
+            <h2>🔍 Comparación: Login Normal vs Ataque</h2>
+            
+            <div class="scenario">
+                <div class="normal-scenario">
+                    <h3>✅ Escenario Normal</h3>
+                    <p><strong>Input del Usuario:</strong></p>
+                    <div style="background: #ecf0f1; padding: 10px; border-radius: 5px;">
+                        Username: admin<br>
+                        Password: secret123
+                    </div>
+                    
+                    <p><strong>Query SQL Generada:</strong></p>
+                    <div class="query-box">
+                        SELECT * FROM users<br>
+                        WHERE username = 'admin' <br>
+                        AND password = 'secret123'
+                    </div>
+                    
+                    <p class="safe">✅ Resultado: Solo acceso si las credenciales son correctas</p>
+                </div>
+
+                <div class="attack-scenario">
+                    <h3>⚠️ Escenario de Ataque</h3>
+                    <p><strong>Input del Atacante:</strong></p>
+                    <div style="background: #ecf0f1; padding: 10px; border-radius: 5px;">
+                        Username: admin' OR 1=1;--<br>
+                        Password: cualquier_cosa
+                    </div>
+                    
+                    <p><strong>Query SQL Generada:</strong></p>
+                    <div class="query-box">
+                        SELECT * FROM users<br>
+                        WHERE username = 'admin' <span class="danger">OR 1=1;</span><br>
+                        <span style="color: #95a5a6;">-- AND password = 'cualquier_cosa'</span>
+                    </div>
+                    
+                    <p class="danger">🚨 Resultado: ¡Acceso total! Retorna TODOS los usuarios</p>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🧠 ¿Por qué Funciona el Ataque?</h2>
+            
+            <div class="step">
+                <h3>Paso 1: El operador OR</h3>
+                <p>En lógica SQL, <code>OR</code> significa que si <strong>cualquiera</strong> de las condiciones es verdadera, toda la expresión es verdadera.</p>
+                <div class="highlight">
+                    <strong>Ejemplos:</strong><br>
+                    • <code>TRUE OR FALSE = TRUE</code><br>
+                    • <code>FALSE OR TRUE = TRUE</code><br>
+                    • <code>TRUE OR TRUE = TRUE</code><br>
+                    • <code>FALSE OR FALSE = FALSE</code>
+                </div>
+            </div>
+
+            <div class="step">
+                <h3>Paso 2: La condición 1=1</h3>
+                <p><code>1=1</code> es una expresión matemática que <strong>SIEMPRE</strong> evalúa como <code>TRUE</code>.</p>
+                <div class="highlight">
+                    Por tanto: <code>username = 'cualquier_cosa' OR 1=1</code> siempre será <code>TRUE</code>
+                </div>
+            </div>
+
+            <div class="step">
+                <h3>Paso 3: El comentario --</h3>
+                <p>En SQL, <code>--</code> indica que todo lo que sigue es un comentario y debe ser ignorado.</p>
+                <div class="query-box">
+                    SELECT * FROM users WHERE username = 'admin' OR 1=1;<br>
+                    <span style="color: #95a5a6;">-- esto es ignorado AND password = 'cualquier_cosa'</span>
+                </div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🎮 Simulador Interactivo</h2>
+            <div class="interactive-demo">
+                <h3>Prueba Diferentes Inputs</h3>
+                
+                <div class="input-group">
+                    <label for="username">Username:</label>
+                    <input type="text" id="username" placeholder="Ingresa un username">
+                </div>
+                
+                <div class="input-group">
+                    <label for="password">Password:</label>
+                    <input type="text" id="password" placeholder="Ingresa un password">
+                </div>
+                
+                <button class="btn" onclick="testNormalLogin()">🔒 Login Normal</button>
+                <button class="btn" onclick="testSQLInjection()">💀 Inyectar OR 1=1</button>
+                <button class="btn" onclick="loadExamples()">📝 Cargar Ejemplos</button>
+                
+                <div id="sqlQuery" class="query-box" style="display: none;"></div>
+                <div id="result" class="result-box" style="display: none;"></div>
+                <div id="explanation" class="explanation" style="display: none;"></div>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>💥 Variaciones del Ataque</h2>
+            
+            <div class="step">
+                <h3>Diferentes formas de OR 1=1</h3>
+                <div class="query-box">
+                    ' OR 1=1;--<br>
+                    ' OR 'a'='a';--<br>
+                    ' OR 2>1;--<br>
+                    ' OR 'x'='x'#<br>
+                    ') OR ('1'='1<br>
+                    admin' OR 1=1/*
+                </div>
+                <p><strong>Todas estas variaciones tienen el mismo objetivo:</strong> hacer que la condición WHERE siempre sea TRUE.</p>
+            </div>
+        </div>
+
+        <div class="demo-section">
+            <h2>🛡️ ¿Cómo Prevenirlo?</h2>
+            
+            <div class="scenario">
+                <div class="attack-scenario">
+                    <h3>❌ Código Vulnerable</h3>
+                    <div class="query-box">
+                        $query = "SELECT * FROM users<br>
+                        WHERE username = '" . $_POST['user'] . "'<br>
+                        AND password = '" . $_POST['pass'] . "'";
+                    </div>
+                    <p class="danger">🚨 Concatenación directa = Vulnerable</p>
+                </div>
+
+                <div class="normal-scenario">
+                    <h3>✅ Código Seguro</h3>
+                    <div class="query-box">
+                        $stmt = $pdo->prepare(<br>
+                        &nbsp;&nbsp;"SELECT * FROM users<br>
+                        &nbsp;&nbsp;WHERE username = ? AND password = ?"<br>
+                        );<br>
+                        $stmt->execute([$_POST['user'], $_POST['pass']]);
+                    </div>
+                    <p class="safe">✅ Prepared Statements = Seguro</p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function testNormalLogin() {
+            const username = document.getElementById('username').value || 'admin';
+            const password = document.getElementById('password').value || 'secret123';
+            
+            const query = `SELECT * FROM users\nWHERE username = '${username}'\nAND password = '${password}'`;
+            
+            document.getElementById('sqlQuery').innerHTML = query;
+            document.getElementById('sqlQuery').style.display = 'block';
+            
+            if (username === 'admin' && password === 'secret123') {
+                document.getElementById('result').className = 'result-box result-safe';
+                document.getElementById('result').innerHTML = '✅ LOGIN EXITOSO: Usuario autenticado correctamente';
+                document.getElementById('explanation').innerHTML = '<strong>Explicación:</strong> Las credenciales coinciden exactamente, por lo que el acceso es permitido.';
+            } else {
+                document.getElementById('result').className = 'result-box result-danger';
+                document.getElementById('result').innerHTML = '❌ LOGIN FALLIDO: Credenciales incorrectas';
+                document.getElementById('explanation').innerHTML = '<strong>Explicación:</strong> Las credenciales no coinciden, acceso denegado.';
+            }
+            
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('explanation').style.display = 'block';
+        }
+        
+        function testSQLInjection() {
+            const username = document.getElementById('username').value || "admin' OR 1=1;--";
+            const password = document.getElementById('password').value || 'cualquier_cosa';
+            
+            // Simular la inyección
+            let query = `SELECT * FROM users\nWHERE username = '${username}'\nAND password = '${password}'`;
+            
+            if (username.includes("OR 1=1")) {
+                // Mostrar como se vería la query con la inyección
+                const parts = username.split("'");
+                query = `SELECT * FROM users\nWHERE username = '${parts[0]}' OR 1=1;--\n<span style="color: #95a5a6;">-- AND password = '${password}'</span>`;
+                
+                document.getElementById('result').className = 'result-box result-danger';
+                document.getElementById('result').innerHTML = '🚨 ATAQUE EXITOSO: ¡Acceso total a la base de datos!<br>📊 Resultado: TODOS los usuarios retornados';
+                document.getElementById('explanation').innerHTML = '<strong>¿Por qué funciona?</strong><br>1. La comilla cierra el string username<br>2. OR 1=1 hace que la condición siempre sea TRUE<br>3. -- comenta el resto de la query<br>4. ¡Bypass completo de autenticación!';
+            } else {
+                document.getElementById('result').className = 'result-box result-safe';
+                document.getElementById('result').innerHTML = '✅ Sin inyección detectada';
+                document.getElementById('explanation').innerHTML = '<strong>Explicación:</strong> Input normal, sin caracteres maliciosos.';
+            }
+            
+            document.getElementById('sqlQuery').innerHTML = query;
+            document.getElementById('sqlQuery').style.display = 'block';
+            document.getElementById('result').style.display = 'block';
+            document.getElementById('explanation').style.display = 'block';
+        }
+        
+        function loadExamples() {
+            const examples = [
+                { user: "admin' OR 1=1;--", pass: "cualquier_cosa" },
+                { user: "user' OR 'a'='a';--", pass: "test" },
+                { user: "admin", pass: "secret123" },
+                { user: "hacker' OR 2>1#", pass: "password" }
+            ];
+            
+            const example = examples[Math.floor(Math.random() * examples.length)];
+            document.getElementById('username').value = example.user;
+            document.getElementById('password').value = example.pass;
+        }
+        
+        // Cargar ejemplo inicial
+        window.onload = function() {
+            document.getElementById('username').value = "admin' OR 1=1;--";
+            document.getElementById('password').value = "cualquier_cosa";
+        };
+    </script>
+</body>
+</html>

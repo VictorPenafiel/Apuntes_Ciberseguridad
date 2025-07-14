@@ -277,3 +277,188 @@ Virus : refiérase a "Virus informático"
 Vishing : Explotación de las comunicaciones electrónicas de voz para obtener información confidencial o suplantar la identidad de una fuente conocida
 
 Ataque de "agujero de agua": Un tipo de ataque en el que un agente de amenaza compromete un sitio web visitado con frecuencia por un grupo específico de usuarios
+Términos y definiciones del Curso 1, Módulo 3
+
+Recurso: Elemento que se percibe como poseedor de valor para una organización
+
+Disponibilidad: La idea de que los datos son accesibles para aquellos que están autorizados a acceder a ellos
+
+Cumplimiento normativo: El proceso de adhesión a los Estándares internos y a las Regulaciones externas
+
+Confidencialidad: La idea de que sólo los usuarios autorizados pueden acceder a recursos o Datos específicos
+
+Tríada de confidencialidad, integridad y disponibilidad (CID): Modelo que ayuda a informar sobre cómo las organizaciones tienen en cuenta el riesgo a la hora de establecer sistemas y políticas de Seguridad
+
+Hacktivista: Persona que utiliza la piratería informática para lograr un objetivo político
+
+Ley de Transferencia y Responsabilidad de los Seguros Médicos (HIPAA): Una ley federal estadounidense establecida para proteger la información sanitaria de los pacientes
+
+Integridad: La idea de que los Datos son correctos, auténticos y fiables
+
+Marco de Ciberseguridad (CSF) del Instituto Nacional de Estándares y Tecnología (NIST): Un framework voluntario que consiste en estándares, directrices y mejores prácticas para gestionar el riesgo de la ciberseguridad
+
+Protección de la privacidad: El acto de salvaguardar la información personal del uso no autorizado
+
+Información médica protegida (PHI) : Información relacionada con la salud o el estado físico o mental pasado, presente o futuro de una persona
+
+Arquitectura de seguridad: Tipo de diseño de seguridad compuesto por múltiples componentes, como herramientas y procesos, que se utilizan para proteger a una organización de riesgos y amenazas externas
+
+Controles de seguridad: Salvaguardas diseñadas para reducir riesgos de Seguridad específicos
+
+Ética de la seguridad: Pautas para tomar decisiones adecuadas como profesional de la Seguridad
+
+Marcos de seguridad: Directrices utilizadas para elaborar planes que ayuden a mitigar el riesgo y las amenazas a los Datos y a la privacidad
+
+Gobernanza de seguridad: Prácticas que ayudan a apoyar, definir y dirigir los esfuerzos de seguridad de una organización
+
+Información de identificación personal sensible (SPII): Un tipo específico de PII que entra dentro de las directrices de manejo más estrictas
+
+Herramientas para proteger las operaciones de Negocio a negocio (Business-to-Business)
+Estado: Traducido automáticamente del Inglés
+Traducido automáticamente del Inglés
+Información:
+Este elemento incluye contenido que aún no se tradujo a tu idioma preferido.
+
+Anteriormente, se le presentaron varias Habilidades técnicas que los analistas de Seguridad necesitan desarrollar. También se le presentaron algunas herramientas que los analistas de seguridad de nivel básico pueden tener en su caja de herramientas. En esta lectura, aprenderá más sobre cómo las habilidades técnicas y las herramientas ayudan a los analistas de Seguridad a mitigar los riesgos.
+El kit de herramientas de un analista de nivel básico
+
+Cada organización puede disponer de un juego de herramientas diferente, en función de sus necesidades de Seguridad. Como futuro analista, es importante que esté familiarizado con las herramientas estándar del sector y que pueda demostrar su capacidad para aprender a utilizar herramientas similares en un posible lugar de trabajo.
+Una persona con una caja de herramientas con distintas herramientas en su interior
+
+Herramientas de administración de información y eventos de seguridad (SIEM)
+
+Una herramienta SIEM es una aplicación que recopila y analiza datos de registro para monitorizar las actividades críticas de una organización. Un registro A es un registro de los eventos que se producen en los sistemas de una organización. Dependiendo de la cantidad de datos con los que esté trabajando, podría llevarle horas o días filtrar los datos de registro por su cuenta. Las herramientas SIEM reducen la cantidad de datos que un analista debe revisar proporcionando alertas para tipos específicos de amenazas, riesgos y vulnerabilidades.
+
+Las herramientas SIEM proporcionan una serie de paneles que organizan visualmente los datos en categorías, permitiendo a los usuarios seleccionar los datos que desean analizar. Las distintas herramientas SIEM tienen diferentes tipos de paneles que muestran la información a la que se tiene acceso.
+
+Las herramientas SIEM también vienen con diferentes opciones de alojamiento, incluyendo on-premise y en la nube. Las organizaciones pueden elegir una opción de alojamiento sobre otra basándose en la experiencia de un miembro del equipo de Seguridad. Por ejemplo, debido a que una versión alojada en la nube tiende a ser más fácil de configurar, utilizar y mantener que una versión in situ, un Equipo de seguridad con menos experiencia puede elegir esta opción para su organización.
+Analizadores de protocolos de red (packet sniffers)
+
+Un analizador de protocolos de red, también conocido como rastreador de paquetes, es una herramienta diseñada para capturar y analizar el tráfico de datos en una red. Esto significa que la herramienta mantiene un registro de todos los datos que encuentra una computadora dentro de la red de una organización. Más adelante en el Programa, tendrá la oportunidad de practicar el uso de algunas herramientas comunes del Analizador de protocolos de red (packet sniffer).
+Manuales de estrategias
+
+Un libro de jugadas es un manual que proporciona detalles sobre cualquier acción operativa, como por ejemplo cómo responder a un incidente de seguridad. Las organizaciones suelen tener varios manuales de estrategias que documentan los procesos y procedimientos que deben seguir sus equipos. Los manuales de estrategias varían de una organización a otra, pero todos tienen un propósito similar: guiar a los analistas a través de una serie de pasos para completar tareas específicas relacionadas con la Seguridad.
+
+Por ejemplo, considere el siguiente escenario: Usted trabaja como analista de Seguridad para una empresa de Respuesta ante incidentes. Se le asigna un caso relacionado con una pequeña consulta médica que ha sufrido una brecha de Seguridad. Su trabajo consiste en ayudar en la investigación forense y proporcionar pruebas a una compañía de seguros de ciberseguridad. A continuación, utilizarán sus conclusiones de la investigación para determinar si la práctica médica recibirá el pago de su seguro.
+
+En este escenario, los manuales de estrategias describirían las acciones específicas que debe llevar a cabo para realizar la investigación. Los manuales de estrategias también le ayudarán a asegurarse de que sigue los protocolos y procedimientos adecuados. Cuando trabaje en un caso forense, puede seguir dos tipos de manuales:
+
+    El primer tipo de libro de jugadas que podría consultar se denomina Libro de jugadas de la cadena de custodia. La cadena de custodia es el proceso de documentación de la posesión y el control de las pruebas durante el ciclo de vida de un incidente. Como analista de seguridad que participa en un análisis forense, trabajará con los datos informáticos que fueron violados. Usted y el equipo forense también tendrán que documentar quién, qué, dónde y por qué tiene las pruebas recogidas. Las pruebas son su responsabilidad mientras estén en su posesión. Las pruebas deben mantenerse seguras y rastreadas. Cada vez que se trasladen las pruebas, deberá informarse de ello. Esto permite que todas las partes implicadas sepan exactamente dónde están las pruebas en todo momento.
+
+    El segundo manual de estrategias que puede utilizar su Equipo se denomina Manual de protección y preservación de evidencias . Proteger y preservar evidencias es el proceso de trabajar adecuadamente con evidencias digitales frágiles y volátiles. ASÍ, como analista de Seguridad, es fundamental comprender qué son las pruebas digitales frágiles y volátiles y por qué existe un procedimiento. A medida que siga este Manual de estrategias, consultará el Orden de volatilidad, que es una secuencia que describe el orden de los datos que deben conservarse del primero al último. Da prioridad a los Datos volátiles, que son aquellos que pueden perderse si el dispositivo en cuestión se apaga, independientemente del motivo. Mientras se lleva a cabo una investigación, una gestión inadecuada de las pruebas digitales puede comprometer y alterar dichas pruebas. Cuando las pruebas se gestionan de forma inadecuada durante una investigación, ya no pueden utilizarse. Por esta razón, la primera prioridad en cualquier investigación es preservar adecuadamente los datos. Puede preservar los Datos haciendo copias y llevando a cabo su investigación utilizando esas copias.
+
+Puntos clave
+
+En esta lectura, usted aprendió sobre algunas herramientas que un analista de Seguridad puede tener en su caja de herramientas, dependiendo de donde trabaje. También ha explorado dos tipos importantes de manuales: la cadena de custodia y la protección y preservación de evidencias. Sin embargo, estos son sólo dos procedimientos que tienen lugar al principio de una investigación forense. Si las investigaciones forenses le interesan, le animamos a que siga explorando esta ruta de acceso profesional o la práctica de la Seguridad. En el proceso, es posible que aprenda sobre herramientas forenses que desee añadir a su caja de herramientas. Aunque todos los componentes forenses que conforman una investigación no se tratarán en este programa de certificación, algunos conceptos forenses se discutirán en cursos posteriores.
+Recursos para más información
+
+El Informe Horizonte de Amenazas
+
+ del Equipo de Acción de Ciberseguridad de Google proporciona inteligencia estratégica para hacer frente a las amenazas a la empresa en la Nube.
+
+La Agencia de Ciberseguridad y Seguridad de las Infraestructuras (CISA) tiene una Lista de Servicios y Herramientas de Ciberseguridad gratuitos
+. Revise la Lista para obtener más información sobre herramientas de ciberseguridad de código abierto.
+
+Utilice herramientas para proteger las operaciones de Negocio a negocio (Business-to-Business)
+Estado: Traducido automáticamente del Inglés
+Traducido automáticamente del Inglés
+Información:
+Este elemento incluye contenido que aún no se tradujo a tu idioma preferido.
+
+Anteriormente, se le presentó la programación, los sistemas operativos y las herramientas utilizadas habitualmente por los profesionales de la ciberseguridad. En esta lectura, aprenderá más sobre programación y sistemas operativos, así como otras herramientas que los analistas de nivel básico utilizan para ayudar a proteger a las organizaciones y a las personas a las que sirven.
+Herramientas y sus propósitos
+Programación
+
+Laprogramación es un proceso que puede utilizarse para crear un conjunto específico de instrucciones para que una computadora ejecute tareas. Los analistas de Seguridad utilizan lenguajes de programación, como Python, para ejecutar la Automatización. Automatización es el uso de la tecnología para reducir el esfuerzo humano y manual en la realización de tareas comunes y repetitivas. La Automatización también ayuda a reducir el Riesgo de error humano.
+
+Otro lenguaje de programación utilizado por los analistas se denomina Lenguaje de Consulta Estructurada (SQL). SQL se utiliza para crear, interactuar y solicitar información a una base de datos. Una base de datos es una colección organizada de información o datos. Puede haber millones de puntos de datos en una base de datos. Un punto de datos es una pieza específica de información.
+Sistemas operativos
+
+Un sistema operativo es la interfaz entre el hardware de la computadora y el usuario. Linux®, macOS® y Windows son sistemas operativos. Cada uno de ellos ofrece diferentes funcionalidades y experiencias del usuario.
+
+Anteriormente, se le presentó Linux como un sistema operativo de código abierto. Código abierto significa que el código está a disposición del público y permite que la gente haga contribuciones para mejorar el software. Linux no es un lenguaje de programación; sin embargo, implica el uso de una línea de comandos dentro del sistema operativo. Un comando es una instrucción que le dice a la computadora que haga algo. Una interfaz de línea de comandos  es una interfaz de usuario basada en texto que utiliza comandos para interactuar con la computadora. Aprenderá más sobre Linux, incluyendo el kernel de Linux y GNU, en un curso posterior.
+Vulnerabilidad web
+
+Una vulnerabilidad web es un fallo único en una aplicación web que un agente de amenaza podría explotar mediante el uso de código o comportamiento malicioso, para permitir el acceso no autorizado, el robo de datos y la implementación de software malicioso.
+
+Para mantenerse al día sobre los riesgos más críticos para las aplicaciones web, revise el Open Web Application Security Proyecto (OWASP) Top 10
+
+.
+Software antivirus
+
+Elsoftware antivirus es un programa de software utilizado para prevenir, detectar y eliminar software malicioso y virus. También se denomina antimalicioso. Dependiendo del tipo de software antivirus, puede escanear la memoria de un dispositivo para encontrar patrones que indiquen la presencia de software malicioso.
+Sistema de detección de intrusiones
+
+Un Sistema de detección de intrusiones (IDS) es una aplicación que monitoriza la actividad del sistema y alerta sobre posibles intrusiones. El sistema escanea y analiza los paquetes de red, que transportan pequeñas cantidades de datos a través de una red. La pequeña cantidad de Datos facilita el proceso de Detección para que un IDS identifique posibles amenazas a los datos sensibles. Otros sucesos que un IDS puede detectar pueden ser robos y accesos no autorizados.
+Encriptación
+
+La encriptación hace que los datos sean ilegibles y difíciles de descifrar para un usuario no autorizado; su principal objetivo es garantizar la confidencialidad de los datos privados. La encriptación es el proceso de convertir datos de un formato legible a un formato codificado criptográficamente. La codificación criptográfica consiste en convertir el texto plano en texto cifrado seguro. El texto plano es la información no cifrada y el texto cifrado seguro es el resultado de la encriptación.
+
+Nota: La codificación y la encriptación tienen propósitos diferentes. La codificación utiliza un algoritmo de conversión público para permitir que los sistemas que utilizan diferentes representaciones de datos compartan información.
+Pruebas de penetración
+
+Laspruebas de penetración, también denominadas pen testing, son el acto de participar en un ataque simulado que ayuda a identificar vulnerabilidades en sistemas, redes, sitios web, aplicaciones y procesos. Es una evaluación de riesgos exhaustiva que puede evaluar e identificar las amenazas externas e internas, así como los puntos débiles.
+Puntos clave
+
+En esta lectura, ha aprendido más sobre programación y sistemas operativos. También se le presentaron varias herramientas y procesos nuevos. Cada organización selecciona su propio conjunto de herramientas. Por lo tanto, cuantas más herramientas conozca, más valioso será para una organización. Herramientas ayudan a los analistas de Seguridad a completar sus tareas de manera más eficiente y eficaz.
+
+
+Términos y definiciones del Curso 1, Módulo 4
+
+Software antivirus: Programa de software utilizado para prevenir, detectar y eliminar software malicioso y virus
+
+Base de datos: Una colección organizada de Información o Datos
+
+Punto de datos: Una pieza específica de información
+
+Sistema de detección de intrusiones (IDS) : Aplicación que monitorea la actividad del sistema y alerta sobre posibles intrusiones
+
+Linux: Un sistema operativo de código abierto
+
+Registro: Un registro A de los eventos que se producen en los sistemas de una organización
+
+Analizador de protocolos de red: Una herramienta diseñada para capturar y analizar el tráfico de datos dentro de una red
+
+Orden de volatilidad: Una secuencia que describe el orden de los datos que deben conservarse del primero al último
+
+Programación: Un proceso que puede utilizarse para crear un conjunto específico de instrucciones para que una computadora ejecute tareas
+
+Protección y preservación de evidencias: El proceso de trabajar adecuadamente con pruebas digitales frágiles y volátiles
+
+Administración de información y eventos de seguridad (SIEM): Una aplicación que recopila y analiza los datos de registro para monitorizar las actividades críticas de una organización
+
+SQL (Lenguaje de Consulta Estructurado): Lenguaje de consulta utilizado para crear, interactuar y solicitar información a una base de datos
+
+Evaluar: El quinto paso del RMF del NIST que significa determinar si los controles establecidos se implementan correctamente
+
+Autorizar: El sexto paso del NIST RMF que se refiere a ser responsable de los riesgos de Seguridad y privacidad que puedan existir en una organización
+
+Continuidad del negocio: La capacidad de una organización para mantener su productividad diaria mediante el establecimiento de planes de recuperación ante desastres de riesgo
+
+Categorizar: El segundo paso del NIST RMF que se utiliza para desarrollar procesos y tareas de gestión de riesgos
+
+Amenaza externa: Cualquier cosa fuera de la organización que tenga el potencial de dañar los recursos de la organización
+
+Implementar: El cuarto paso del RMF del NIST que significa implementar planes de Seguridad y privacidad para una organización
+
+Amenaza interna: Un empleado actual o anterior, un proveedor externo o un socio de confianza que suponga un riesgo para la Seguridad
+
+Monitorear: El séptimo paso del NIST RMF que significa ser consciente de cómo están funcionando los sistemas
+
+Preparar: El primer paso del NIST RMF relacionado con las actividades que son necesarias para gestionar los riesgos de seguridad y privacidad antes de que se produzca una brecha
+
+Ransomware: Un ataque malicioso en el que los agentes de amenaza encriptan los Datos de una organización y demandan un pago para restaurar la accesibilidad.
+
+Riesgo: Cualquier cosa que pueda afectar a la confidencialidad, integridad y disponibilidad de un recurso
+
+Mitigación de riesgos: El proceso de disponer de los procedimientos y normas adecuados para reducir rápidamente el impacto de un riesgo como una violación de seguridad
+
+Postura de seguridad: La capacidad de una organización para gestionar su defensa de los activos y datos críticos y reaccionar ante los cambios
+
+Seleccionar: El tercer paso del NIST RMF que significa elegir, personalizar y capturar la documentación de los controles que protegen a una organización
+
+Responsabilidad compartida: La idea de que todos los individuos de una organización asuman un papel activo en la reducción del riesgo y el mantenimiento de la Seguridad tanto física como virtual
+
+Ingeniería social: Una técnica de manipulación que explota el error humano para obtener información privada, acceso u objetos de valor
+
+Vulnerabilidad: Una debilidad que puede ser explotada por una amenaza
