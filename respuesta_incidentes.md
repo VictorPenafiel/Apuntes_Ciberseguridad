@@ -1,4 +1,3 @@
-Aquí tienes el texto traducido al español y con formato Markdown:
 
 ---
 

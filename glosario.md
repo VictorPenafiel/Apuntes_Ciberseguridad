@@ -462,3 +462,53 @@ Responsabilidad compartida: La idea de que todos los individuos de una organizac
 Ingeniería social: Una técnica de manipulación que explota el error humano para obtener información privada, acceso u objetos de valor
 
 Vulnerabilidad: Una debilidad que puede ser explotada por una amenaza
+
+Activo: elemento que se percibe como valioso para una organización
+
+Vectores de ataque: Las vías que utilizan los atacantes para penetrar las defensas de seguridad
+
+Autenticación: El proceso de verificar quién es alguien
+
+Autorización: El concepto de conceder acceso a recursos específicos en un sistema
+
+Disponibilidad: La idea de que los datos son accesibles para aquellos que están autorizados a acceder a ellos
+
+Biometría: Las características físicas únicas que pueden utilizarse para verificar la identidad de una persona
+
+Confidencialidad: La idea de que sólo los usuarios autorizados pueden acceder a activos o datos específicos
+
+Tríada de confidencialidad, integridad y disponibilidad (CID): Modelo que ayuda a las organizaciones a considerar los riesgos a la hora de establecer sistemas y políticas de seguridad
+
+Detectar: Una función básica del NIST relacionada con la identificación de posibles incidentes de seguridad y la mejora de las capacidades de supervisión para aumentar la velocidad y la eficacia de las detecciones
+
+Cifrado: Proceso de conversión de datos de un formato legible a un formato codificado
+
+Gobernanza: Una función básica del NIST relacionada con garantizar que una organización establezca, supervise y mejore su estrategia de ciberseguridad, políticas, funciones y procesos de gestión de riesgos para alinearse con los objetivos y reglamentos empresariales
+
+Identificar: Una función básica del NIST relacionada con la gestión del riesgo de ciberseguridad y su efecto sobre las personas y los activos de una organización
+
+Integridad: La idea de que los datos son correctos, auténticos y fiables
+
+Marco de Ciberseguridad (CSF) del Instituto Nacional de Estándares y Tecnología (NIST): Un marco voluntario que consiste en normas, directrices y mejores prácticas para gestionar el riesgo de ciberseguridad
+
+Publicación Especial (S.P.) 800-53 del Instituto Nacional de Normas y Tecnología (NIST): Marco unificado para proteger la seguridad de los sistemas de información en el gobierno federal de Estados Unidos.
+
+Proyecto Abierto de Seguridad en Aplicaciones Web/Open Worldwide Application Security Project (OWASP): Organización sin ánimo de lucro dedicada a mejorar la seguridad del software
+
+Proteger: Una función básica del NIST utilizada para proteger una organización mediante la aplicación de políticas, procedimientos, formación y herramientas que ayudan a mitigar las amenazas a la ciberseguridad
+
+Recuperar: Una función central del NIST relacionada con el retorno de los sistemas afectados a su funcionamiento normal
+
+Responder: Una función central del NIST relacionada con asegurarse de que se utilizan los procedimientos adecuados para contener, neutralizar y analizar los incidentes de seguridad, e implementar mejoras en el proceso de seguridad
+
+Riesgo: Cualquier cosa que pueda afectar a la Confidencialidad, integridad y disponibilidad de un activo
+
+Auditoría de seguridad: Una revisión de los Controles de seguridad de una organización, políticas y procedimientos contra un conjunto de expectativas
+
+Controles de seguridad: Salvaguardas diseñadas para reducir riesgos de seguridad específicos
+
+Marcos de seguridad: Directrices utilizadas para construir planes que ayuden a mitigar el riesgo y las amenazas a los datos y la privacidad
+
+Postura de seguridad: Capacidad de una organización para gestionar su defensa de los activos y datos críticos y reaccionar ante los cambios
+
+Amenaza: Cualquier circunstancia o acontecimiento que pueda afectar negativamente a los activos
