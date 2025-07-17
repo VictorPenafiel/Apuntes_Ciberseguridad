@@ -1,4 +1,4 @@
-¡Claro que sí! Es excelente que estés explorando estas herramientas de seguridad. Aunque a veces parezcan similares, cada una tiene un propósito distinto en el mundo de la ciberseguridad. Aquí te detallo las diferencias entre OWASP, OpenVAS, Burp Suite, Wazuh, Elastic (Elastic Stack/Security) y Security Event Manager:
+
 1. OWASP (Open Worldwide Application Security Project)
 
     Qué es: OWASP no es una herramienta específica, sino una fundación sin fines de lucro dedicada a mejorar la seguridad del software. Es un esfuerzo impulsado por la comunidad que produce proyectos, herramientas, documentación y conferencias de código abierto y gratuitos.

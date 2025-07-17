@@ -1,10 +1,48 @@
+
+
+
 Marco de Ciberseguridad (CSF) del Instituto Nacional de Estándares y Tecnología (NIST)
+# Cis controls (center for internet security)
+    Conjunto de acciones defensivas priorizadas para mitigar los ataques ciberneticos mas comunes.
+
+`Basico(1-6)` Controles esenciales que toda organizacion debe implementar
+
+`Fundacional(7-16)` Buenas practicas tecnicas
+
+`Organizacional(17-20)` Politicas y procedimientos
+
+# Controles y Salvaguardas (Versión 8)
+
+## 01. Inventario y Control de Activos Empresariales
+## 02. Inventario y Control de Activos de Software
+## 03. Protección de Datos
+## 04. Configuración Segura de Activos y Software
+## 05. Gestión de Cuentas
+## 06. Gestión de Acceso
+## 07. Gestión Continua de Vulnerabilidades
+## 08. Gestión de Registros de Auditoría
+## 09. Protecciones de Correo Electrónico y Navegador Web
+## 10. Defensas contra Malware
+## 11. Recuperación de Datos
+## 12. Gestión de Infraestructura de Red
+## 13. Monitoreo y Defensa de Red
+## 14. Conciencia de Seguridad y Capacitación en Habilidades
+## 15. Gestión de Proveedores de Servicios
+## 16. Seguridad de Aplicaciones
+## 17. Gestión de Respuesta a Incidentes
+## 18. Pruebas de Penetración
+
 # Nist
 ## Idenfitificar
+    Desarrollar comprension organizacional paar gestionar riesgos de ciberseguridad
 ## Proteger
+    Implementar mecanismos para garantizar la entrega de servicios
 ## Detectar
+    Desarrollar actividades para identificar la ocurrencia de eventos
 ## Responder
+    Tomar medidas respecto a un incidente detectado
 ## Recuperar
+    Restaurar capacidades o servicios deteriorados por un incidente
 
 
 Actualización: El Marco de Ciberseguridad del NIST es un marco voluntario que consta de normas, directrices y mejores prácticas para gestionar los riesgos de ciberseguridad. En la última versión, CSF v2.0, se ha añadido una nueva función "Gobernar", que hace hincapié en la importancia de una sólida gobernanza de la ciberseguridad. Este marco es ampliamente respetado y esencial para mantener la seguridad independientemente de la organización para la que trabaje.
