@@ -1,49 +1,3 @@
-curl: Se utiliza para transmitir datos con sintaxis URL
-
-curl --manual
-
-curl poner_IP
-    Entrega de informacion, a traves, de un Json
-
-Instalar libreria para ver Json
-    sudo apt-get install jq
-
-curl http://3.86.214.94:30008/ | jq .
-
--X_Permite especificar el metodo HTTP
-curl -X GET  http://3.86.214.94:30008/user/13
-curl -X GET  http://3.86.214.94:30008/admin/settings
-curl -X POST  http://3.86.214.94:30008/login -d "username=user1&password=password1"
-curl -X GET  http://3.86.214.94:30008/admin/users | jq
-curl -X GET "http://3.86.214.94:30008/system/info" | jq .   
-
------------------------------------------------------------------------------------------------------
-Ataque con diccionarios
-
-Instalar
-    sudo apt install hashcat
-Obtener manual    
-    hashcat --help 
-
-    cat /etc/passwd
-Manera de trabajar con diccionarios(informacion general)
-    hashcat -m 0 -a 0 hash.txt diccionario.txt 
-Tratar de romper por medio de fuerza bruta
-    hashcat -m 0 hash.txt diccionario.txt --show
-
-cat > hashcat.txt << EOF
-a
-b
-c
-EOF
-
-echo -n "4618" | md5sum > ejemplo.txt
-more ejemplo.txt
-hashcat -m 0 -a 3 ejemplo.txt ?d?d?d?d
-echo -n "4618" | sha1sum | cut -d '' -f1 >> ejemplo.txt
-hashcat -m 100 -a 0 ejemplo.txt --show
--------------------------------------------------------------------------------
-
 Fases: Se adecuan respectos al contexto
 Caja gris
 Caja negra
@@ -120,3 +74,51 @@ Escalacion Privilegios
 
 Hallazgo
 Analisis de impacto
+
+
+curl: Se utiliza para transmitir datos con sintaxis URL
+
+curl --manual
+
+curl poner_IP
+    Entrega de informacion, a traves, de un Json
+
+Instalar libreria para ver Json
+    sudo apt-get install jq
+
+curl http://3.86.214.94:30008/ | jq .
+
+-X_Permite especificar el metodo HTTP
+curl -X GET  http://3.86.214.94:30008/user/13
+curl -X GET  http://3.86.214.94:30008/admin/settings
+curl -X POST  http://3.86.214.94:30008/login -d "username=user1&password=password1"
+curl -X GET  http://3.86.214.94:30008/admin/users | jq
+curl -X GET "http://3.86.214.94:30008/system/info" | jq .   
+
+-----------------------------------------------------------------------------------------------------
+Ataque con diccionarios
+
+Instalar
+    sudo apt install hashcat
+Obtener manual    
+    hashcat --help 
+
+    cat /etc/passwd
+Manera de trabajar con diccionarios(informacion general)
+    hashcat -m 0 -a 0 hash.txt diccionario.txt 
+Tratar de romper por medio de fuerza bruta
+    hashcat -m 0 hash.txt diccionario.txt --show
+
+cat > hashcat.txt << EOF
+a
+b
+c
+EOF
+
+echo -n "4618" | md5sum > ejemplo.txt
+more ejemplo.txt
+hashcat -m 0 -a 3 ejemplo.txt ?d?d?d?d
+echo -n "4618" | sha1sum | cut -d '' -f1 >> ejemplo.txt
+hashcat -m 100 -a 0 ejemplo.txt --show
+-------------------------------------------------------------------------------
+
