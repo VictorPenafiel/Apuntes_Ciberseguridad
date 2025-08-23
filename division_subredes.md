@@ -28,10 +28,6 @@ La división en subredes es una estrategia de Seguridad común utilizada por las
 
 ---
 
-Redes virtuales y privacidad
-Estado: Traducido automáticamente del Inglés
-Traducido automáticamente del Inglés
-
 Esta sección del curso abarca mucha información sobre el funcionamiento de las redes. Ha repasado los fundamentos de la arquitectura de red y la comunicación y ahora puede utilizar estos conocimientos mientras aprende a proteger las redes. La seguridad de una red privada requiere mantener la confidencialidad de sus datos y restringir el acceso a los usuarios autorizados. 
 
 En esta lectura, repasará varios temas de seguridad de redes tratados anteriormente en el curso, como las redes privadas virtuales (VPN), los servidores proxy, los cortafuegos y las zonas de seguridad. Continuará aprendiendo más sobre estos conceptos y cómo se relacionan entre sí a medida que avance en el curso. 
