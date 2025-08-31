@@ -1,1 +1,0 @@
-VPN, HTTPS y no ocupar redes wifi sin encriptacion para proteger sniffing de paquetes

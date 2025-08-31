@@ -1,6 +1,4 @@
-El Modelo OSI
-Estado: Traducido automáticamente del Inglés
-Traducido automáticamente del Inglés
+
 
 Hasta ahora, en esta sección del curso, ha aprendido sobre los componentes de una red, los dispositivos de red y cómo se produce la comunicación a través de una red. También ha estudiado el Modelo TCP/IP para comprender cómo se organiza la comunicación en la red a través de las diferentes capas de Internet.
 
